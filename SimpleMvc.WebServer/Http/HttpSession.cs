@@ -1,7 +1,7 @@
 ﻿namespace SimpleMvc.WebServer.Http
 {
    using System.Collections.Generic;
-   using WebServer.Contracts.Common;
+   using Common;
    using Contracts;
 
    public class HttpSession : IHttpSession

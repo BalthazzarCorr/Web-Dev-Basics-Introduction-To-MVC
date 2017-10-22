@@ -1,14 +1,15 @@
-﻿namespace SimpleMvc.WebServer.Http
+﻿using SimpleMvc.WebServer.Http.Response;
+
+namespace SimpleMvc.WebServer.Http
 {
    using System;
    using System.Collections.Generic;
    using System.Linq;
    using System.Net;
    using Common;
-   using Enums;
-   using Exceptions;
-   using Http;
    using Contracts;
+   using Exceptions;
+   using Enums;
 
    public class HttpRequest : IHttpRequest
     {
@@ -72,9 +73,12 @@
 
             this.Method = this.ParseMethod(requestLine.First());
             this.Url = requestLine[1];
+
             this.Path = this.ParsePath(this.Url);
-            
-            this.ParseHeaders(requestLines);
+
+         this.ParseHeaders(requestLines);
+
+         
             this.ParseCookies();
             this.ParseParameters();
             this.ParseFormData(requestLines.Last());

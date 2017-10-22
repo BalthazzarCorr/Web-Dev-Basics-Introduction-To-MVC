@@ -22,6 +22,7 @@
       private object controllerInstance;
       private string controllerName;
       private string actionName;
+      private string pathFavIcon;
       private object[] methodParameters;
 
       public IHttpResponse Handle(IHttpRequest request)
@@ -29,7 +30,19 @@
          this.getParams = new Dictionary<string, string>(request.UrlParameters);
          this.postParams = new Dictionary<string, string>(request.FormData);
          this.requestMethod = request.Method.ToString().ToUpper();
+         this.pathFavIcon = request.Path;
+
+
+         if (pathFavIcon == "/favicon.ico")
+         {
+            return new ContentResponse(HttpStatusCode.NotFound, "Not found");
+         }
+
          this.PrepareControllerAndAcionNames(request);
+
+
+
+
 
          var methodInfo = this.GetActionForExecution();
 
@@ -50,9 +63,10 @@
       {
          var pathParts = request.Path.Split(new[] { '/', '?' }, StringSplitOptions.RemoveEmptyEntries);
 
+            
+
          if (pathParts.Length < 2)
          {
-
             BadRequestException.ThrowFromInvalidRequest();
          }
 
@@ -112,10 +126,10 @@
 
       private object GetControllerInstance()
       {
-         if (controllerInstance != null)
-         {
-            return controllerInstance;
-         }
+         //if (controllerInstance != null)
+         //{
+         //   return controllerInstance;
+         //}
 
          var controllerFullQualifiedName = string.Format(
             "{0}.{1}.{2}, {0}",

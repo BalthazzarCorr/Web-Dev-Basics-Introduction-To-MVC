@@ -1,7 +1,7 @@
 ﻿namespace SimpleMvc.WebServer.Http.Contracts
 {
    using System.Collections.Generic;
-   using WebServer.Contracts.Http;
+   using Http;
 
 
    public interface IHttpCookieCollection : IEnumerable<HttpCookie>
