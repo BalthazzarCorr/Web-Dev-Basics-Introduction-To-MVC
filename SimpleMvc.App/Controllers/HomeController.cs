@@ -1,10 +1,9 @@
-﻿using SimpleMvc.App.Models;
-
-namespace SimpleMvc.App.Controllers
+﻿namespace SimpleMvc.App.Controllers
 {
    using Framework.Attributes.Methods;
    using Framework.Contracts;
    using Framework.Controllers;
+   using Models;
 
    public class HomeController : Controller
     {

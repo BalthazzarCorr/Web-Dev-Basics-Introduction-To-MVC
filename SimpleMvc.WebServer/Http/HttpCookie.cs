@@ -1,8 +1,8 @@
-﻿using System;
-using SimpleMvc.WebServer.Contracts.Common;
-
-namespace SimpleMvc.WebServer.Contracts.Http
+﻿namespace SimpleMvc.WebServer.Http
 {
+   using System;
+   using Common;
+
    public class HttpCookie
     {
         // expires is in days

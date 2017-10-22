@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using SimpleMvc.WebServer.Contracts.Common;
-using SimpleMvc.WebServer.Contracts.Http.Contracts;
-
-namespace SimpleMvc.WebServer.Contracts.Http
+﻿namespace SimpleMvc.WebServer.Http
 {
+   using System.Collections.Generic;
+   using WebServer.Contracts.Common;
+   using Contracts;
+
    public class HttpSession : IHttpSession
     {
         private readonly IDictionary<string, object> values;

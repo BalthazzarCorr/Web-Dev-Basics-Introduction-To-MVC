@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
-using SimpleMvc.WebServer.Contracts.Common;
-using SimpleMvc.WebServer.Contracts.Http.Contracts;
-
-namespace SimpleMvc.WebServer.Contracts.Http
+﻿namespace SimpleMvc.WebServer.Http
 {
+   using System;
+   using System.Collections;
+   using System.Collections.Generic;
+   using System.Text;
+   using Common;
+   using Contracts;
+
+
    public class HttpHeaderCollection : IHttpHeaderCollection
     {
         private readonly IDictionary<string, ICollection<HttpHeader>> headers;

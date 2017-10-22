@@ -1,8 +1,9 @@
-﻿using System;
-using SimpleMvc.WebServer.Contracts.Contracts;
-
-namespace SimpleMvc.WebServer.Contracts.Common
+﻿namespace SimpleMvc.WebServer.Common
 {
+   using System;
+   using Contracts;
+
+
    public class InternalServerErrorView : IView
     {
         private readonly Exception exception;

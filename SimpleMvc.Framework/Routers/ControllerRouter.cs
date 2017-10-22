@@ -1,16 +1,17 @@
 ﻿namespace SimpleMvc.Framework.Routers
 {
+
    using System;
    using System.Collections.Generic;
    using System.Linq;
    using System.Reflection;
    using Attributes.Methods;
    using Contracts;
-   using WebServer.Contracts.Contracts;
-   using WebServer.Contracts.Enums;
-   using WebServer.Contracts.Exceptions;
-   using WebServer.Contracts.Http.Contracts;
-   using WebServer.Contracts.Http.Response;
+   using WebServer.Contracts;
+   using WebServer.Http.Contracts;
+   using WebServer.Http.Response;
+   using WebServer.Enums;
+   using WebServer.Exceptions;
 
    public class ControllerRouter : IHandleable
    {

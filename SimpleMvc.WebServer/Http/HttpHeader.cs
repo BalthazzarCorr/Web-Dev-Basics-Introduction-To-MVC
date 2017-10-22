@@ -1,7 +1,7 @@
-﻿using SimpleMvc.WebServer.Contracts.Common;
-
-namespace SimpleMvc.WebServer.Contracts.Http
+﻿namespace SimpleMvc.WebServer.Http
 {
+   using Common;
+
    public class HttpHeader
     {
         public const string ContentType = "Content-Type";

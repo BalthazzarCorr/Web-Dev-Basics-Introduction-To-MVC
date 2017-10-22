@@ -1,11 +1,13 @@
-﻿using System;
-using System.Net;
-using System.Net.Sockets;
-using System.Threading.Tasks;
-using SimpleMvc.WebServer.Contracts.Contracts;
-
-namespace SimpleMvc.WebServer.Contracts
+﻿namespace SimpleMvc.WebServer
 {
+   using System;
+   using System.Net;
+   using System.Net.Sockets;
+   using System.Threading.Tasks;
+   using Contracts;
+   using Contracts.Contracts;
+
+
    public class WebServer : IRunnable
     {
         private const string localHostIpAddress = "127.0.0.1";

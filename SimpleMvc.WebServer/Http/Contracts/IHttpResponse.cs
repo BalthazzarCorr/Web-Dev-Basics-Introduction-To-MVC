@@ -1,7 +1,7 @@
-﻿using SimpleMvc.WebServer.Contracts.Enums;
-
-namespace SimpleMvc.WebServer.Contracts.Http.Contracts
+﻿namespace SimpleMvc.WebServer.Http.Contracts
 {
+   using  Enums;
+
    public interface IHttpResponse
     {
         HttpStatusCode StatusCode { get; }

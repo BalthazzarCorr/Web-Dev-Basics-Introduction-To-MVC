@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace SimpleMvc.WebServer.Contracts.Common
+﻿namespace SimpleMvc.WebServer.Common
 {
+   using System;
+
    public static class CoreValidator
     {
         public static void ThrowIfNull(object obj, string name)

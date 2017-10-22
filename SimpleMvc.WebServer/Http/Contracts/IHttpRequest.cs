@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using SimpleMvc.WebServer.Contracts.Enums;
-
-namespace SimpleMvc.WebServer.Contracts.Http.Contracts
+﻿namespace SimpleMvc.WebServer.Http.Contracts
 {
+   using System.Collections.Generic;
+   using Enums;
+
    public interface IHttpRequest
     {
         IDictionary<string, string> FormData { get; }

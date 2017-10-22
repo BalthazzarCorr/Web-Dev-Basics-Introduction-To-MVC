@@ -1,7 +1,8 @@
-﻿using System.Collections.Concurrent;
-
-namespace SimpleMvc.WebServer.Contracts.Http
+﻿namespace SimpleMvc.WebServer.Http
 {
+   using System.Collections.Concurrent;
+
+
    public static class SessionStore
     {
         public const string SessionCookieKey = "MY_SID";

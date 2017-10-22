@@ -1,8 +1,8 @@
-﻿using SimpleMvc.WebServer.Contracts.Common;
-using SimpleMvc.WebServer.Contracts.Enums;
-
-namespace SimpleMvc.WebServer.Contracts.Http.Response
+﻿namespace SimpleMvc.WebServer.Http.Response
 {
+   using Common;
+   using Enums;
+
    public class NotFoundResponse : ContentResponse
     {
         public NotFoundResponse()

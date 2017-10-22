@@ -1,7 +1,7 @@
-﻿using SimpleMvc.WebServer.Contracts.Enums;
-
-namespace SimpleMvc.WebServer.Contracts.Http.Response
+﻿namespace SimpleMvc.WebServer.Http.Response
 {
+   using Enums;
+
    public class BadRequestResponse : HttpResponse
     {
         public BadRequestResponse()

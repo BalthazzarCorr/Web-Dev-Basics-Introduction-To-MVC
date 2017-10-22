@@ -1,4 +1,4 @@
-﻿namespace SimpleMvc.WebServer.Contracts.Contracts
+﻿namespace SimpleMvc.WebServer.Contracts
 {
     public interface IView
     {

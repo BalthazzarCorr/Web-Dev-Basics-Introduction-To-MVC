@@ -1,9 +1,10 @@
-﻿using System.Text;
-using SimpleMvc.WebServer.Contracts.Enums;
-using SimpleMvc.WebServer.Contracts.Http.Contracts;
-
-namespace SimpleMvc.WebServer.Contracts.Http.Response
+﻿namespace SimpleMvc.WebServer.Http.Response
 {
+   using System.Text;
+   using Contracts;
+   using Enums;
+
+
    public abstract class HttpResponse : IHttpResponse
     {
         private string statusCodeMessage => this.StatusCode.ToString();

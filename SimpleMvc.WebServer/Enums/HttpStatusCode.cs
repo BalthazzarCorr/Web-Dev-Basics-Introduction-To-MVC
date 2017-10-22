@@ -1,4 +1,4 @@
-﻿namespace SimpleMvc.WebServer.Contracts.Enums
+﻿namespace SimpleMvc.WebServer.Enums
 {
     public enum HttpStatusCode
     {

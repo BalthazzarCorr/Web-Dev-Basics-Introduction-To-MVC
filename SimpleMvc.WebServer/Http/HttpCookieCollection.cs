@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using SimpleMvc.WebServer.Contracts.Common;
-using SimpleMvc.WebServer.Contracts.Http.Contracts;
-
-namespace SimpleMvc.WebServer.Contracts.Http
+﻿namespace SimpleMvc.WebServer.Http
 {
+   using System;
+   using System.Collections;
+   using System.Collections.Generic;
+   using Common;
+   using Contracts;
+
    public class HttpCookieCollection : IHttpCookieCollection
     {
         private readonly IDictionary<string, HttpCookie> cookies;

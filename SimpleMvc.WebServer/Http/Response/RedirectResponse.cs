@@ -1,17 +1,17 @@
-﻿using SimpleMvc.WebServer.Contracts.Common;
-using SimpleMvc.WebServer.Contracts.Enums;
-
-namespace SimpleMvc.WebServer.Contracts.Http.Response
+﻿namespace SimpleMvc.WebServer.Http.Response
 {
+   using Enums;
+   using Common;
+
    public class RedirectResponse : HttpResponse
-    {
-        public RedirectResponse(string redirectUrl)
-        {
-            CoreValidator.ThrowIfNullOrEmpty(redirectUrl, nameof(redirectUrl));
+   {
+      public RedirectResponse(string redirectUrl)
+      {
+         CoreValidator.ThrowIfNullOrEmpty(redirectUrl, nameof(redirectUrl));
 
-            this.StatusCode = HttpStatusCode.Found;
+         this.StatusCode = HttpStatusCode.Found;
 
-            this.Headers.Add(HttpHeader.Location, redirectUrl);
-        }
-    }
+         this.Headers.Add(HttpHeader.Location, redirectUrl);
+      }
+   }
 }

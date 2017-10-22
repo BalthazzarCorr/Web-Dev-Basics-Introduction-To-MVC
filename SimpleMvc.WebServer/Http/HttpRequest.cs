@@ -1,14 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using SimpleMvc.WebServer.Contracts.Common;
-using SimpleMvc.WebServer.Contracts.Enums;
-using SimpleMvc.WebServer.Contracts.Exceptions;
-using SimpleMvc.WebServer.Contracts.Http.Contracts;
-
-namespace SimpleMvc.WebServer.Contracts.Http
+﻿namespace SimpleMvc.WebServer.Http
 {
+   using System;
+   using System.Collections.Generic;
+   using System.Linq;
+   using System.Net;
+   using Common;
+   using Enums;
+   using Exceptions;
+   using Http;
+   using Contracts;
+
    public class HttpRequest : IHttpRequest
     {
         private readonly string requestText;

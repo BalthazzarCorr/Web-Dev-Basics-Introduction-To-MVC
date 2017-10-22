@@ -1,8 +1,9 @@
-﻿using SimpleMvc.WebServer.Contracts.Enums;
-using SimpleMvc.WebServer.Contracts.Exceptions;
-
-namespace SimpleMvc.WebServer.Contracts.Http.Response
+﻿namespace SimpleMvc.WebServer.Http.Response
 {
+   using Enums;
+   using Http;
+   using Exceptions;
+
    public class ContentResponse : HttpResponse
     {
         private readonly string content;

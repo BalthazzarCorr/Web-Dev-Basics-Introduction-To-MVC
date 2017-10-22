@@ -1,7 +1,7 @@
-﻿namespace SimpleMvc.WebServer.Contracts.Contracts
+﻿namespace SimpleMvc.WebServer.Contracts
 {
-   using Http.Contracts;
-
+   using SimpleMvc.WebServer.Http.Contracts;
+   
    public interface IHandleable
    {
       IHttpResponse Handle(IHttpRequest request);

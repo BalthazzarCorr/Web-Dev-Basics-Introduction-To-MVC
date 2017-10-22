@@ -1,7 +1,7 @@
-﻿using SimpleMvc.WebServer.Contracts.Contracts;
-
-namespace SimpleMvc.WebServer.Contracts.Common
+﻿namespace SimpleMvc.WebServer.Common
 {
+   using Contracts;
+
    public class NotFoundView : IView
     {
         public string View()

@@ -1,4 +1,4 @@
-﻿namespace SimpleMvc.WebServer.Contracts.Http.Contracts
+﻿namespace SimpleMvc.WebServer.Http.Contracts
 {
     public interface IHttpSession
     {

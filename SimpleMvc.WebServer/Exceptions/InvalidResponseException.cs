@@ -1,7 +1,8 @@
-﻿using System;
-
-namespace SimpleMvc.WebServer.Contracts.Exceptions
+﻿namespace SimpleMvc.WebServer.Exceptions
 {
+   using System;
+
+
    public class InvalidResponseException : Exception
     {
         public InvalidResponseException(string message)

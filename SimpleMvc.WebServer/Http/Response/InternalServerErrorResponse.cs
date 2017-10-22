@@ -1,9 +1,9 @@
-﻿using System;
-using SimpleMvc.WebServer.Contracts.Common;
-using SimpleMvc.WebServer.Contracts.Enums;
-
-namespace SimpleMvc.WebServer.Contracts.Http.Response
+﻿namespace SimpleMvc.WebServer.Http.Response
 {
+   using System;
+   using Common;
+   using Enums;
+
    public class InternalServerErrorResponse : ContentResponse
     {
         public InternalServerErrorResponse(Exception ex)

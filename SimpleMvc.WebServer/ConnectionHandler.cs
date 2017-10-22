@@ -1,14 +1,14 @@
-﻿using System;
-using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
-using SimpleMvc.WebServer.Contracts.Common;
-using SimpleMvc.WebServer.Contracts.Contracts;
-using SimpleMvc.WebServer.Contracts.Http;
-using SimpleMvc.WebServer.Contracts.Http.Contracts;
-
-namespace SimpleMvc.WebServer.Contracts
+﻿namespace SimpleMvc.WebServer
 {
+   using System;
+   using System.Net.Sockets;
+   using System.Text;
+   using System.Threading.Tasks;
+   using Contracts;
+   using Http;
+   using Http.Contracts;
+   using Common;
+
    public class ConnectionHandler
     {
         private readonly Socket client;

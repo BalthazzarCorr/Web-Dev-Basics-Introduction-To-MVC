@@ -7,7 +7,7 @@ namespace SimpleMvc.Framework
 
    public static class MvcEngine
     {
-       public static void Run(WebServer server)
+       public static void Run(WebServer.WebServer server)
        {
           RegisterAssemblyName();
           //RegisterControllerData();
